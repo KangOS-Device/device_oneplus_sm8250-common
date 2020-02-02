@@ -43,6 +43,10 @@
     <string name="proximity_sensor_title">Czujnik zbliżeniowy</string>
     <string name="pocket_gesture_title">Kieszeń</string>
     <string name="pocket_gesture_summary">Pulsujące powiadomienia po wyjęciu z kieszeni</string>
+    <!-- TouchScreen gestures -->
+    <string name="screen_gestures_panel_title">Gesty</string>
+    <string name="touchscreen_gesture_settings_title">Gesty ekranu dotykowego</string>
+    <string name="touchscreen_gesture_settings_summary">Wykonaj różne gesty na ekranie dotykowym dla szybkich akcji</string>
     <!-- Notification slider -->
     <string name="notification_slider_title">Suwak powiadomień</string>
     <string name="notification_slider_selection_dialog_title">Akcja</string>
