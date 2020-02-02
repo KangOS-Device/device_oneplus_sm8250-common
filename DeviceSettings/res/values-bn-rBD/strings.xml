@@ -43,6 +43,10 @@
     <string name="proximity_sensor_title">প্রক্সিমিটি সেন্সর</string>
     <string name="pocket_gesture_title">পকেট</string>
     <string name="pocket_gesture_summary">পকেট থেকে বের করলে নোটিফিকেশন পালস</string>
+    <!-- TouchScreen gestures -->
+    <string name="screen_gestures_panel_title">জেশ্চারস</string>
+    <string name="touchscreen_gesture_settings_title">টাচস্ক্রিন জেশ্চারস</string>
+    <string name="touchscreen_gesture_settings_summary">বিভিন্ন দ্রুত সেবার জন্য বিভিন্ন জেশ্চারর্সের ব্যবহার</string>
     <!-- FPS info -->
     <string name="fps_title">FPS পরিমাপণ</string>
     <string name="fps_info_title">FPS overlay</string>

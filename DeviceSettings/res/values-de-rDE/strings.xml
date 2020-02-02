@@ -43,6 +43,10 @@
     <string name="proximity_sensor_title">Näherungssensor</string>
     <string name="pocket_gesture_title">Tasche</string>
     <string name="pocket_gesture_summary">Pulsbenachrichtigung beim Nehmen aus der Tasche</string>
+    <!-- TouchScreen gestures -->
+    <string name="screen_gestures_panel_title">Gesten</string>
+    <string name="touchscreen_gesture_settings_title">Touchscreen-Gesten</string>
+    <string name="touchscreen_gesture_settings_summary">Verschiedene Touchscreen-Gesten für schnelle Aktionen ausführen</string>
     <!-- FPS info -->
     <string name="fps_title">Gemessene FPS</string>
     <string name="fps_info_title">FPS overlay</string>
