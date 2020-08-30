@@ -32,6 +32,9 @@ persist.vendor.dpm.feature=9
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
 
+# Fingerprint
+vendor.boot.fingerprintbstate=orange
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
