@@ -51,6 +51,11 @@
     <string name="fps_info_title">FPS overlay</string>
     <string name="fps_info_summary">Show overlay with with current frames per second</string>
 
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">LogTile</string>
+    <string name="quick_settings_log_tile_dialog_title">Options</string>
+    <string name="cannot_get_su">Action failed because of missing superuser access</string>
+
     <!-- Notification slider -->
     <string name="notification_slider_title">Notification slider</string>
     <string name="notification_slider_selection_dialog_title">Action</string>
