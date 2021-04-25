@@ -74,4 +74,13 @@
     <string name="notification_slider_mode_vibrate">Vibrate</string>
     <string name="notification_slider_mode_none">Normal</string>
     <string name="buttons_dashboard_summary">Alert Slider Settings</string>
+
+    <!-- Refresh rate -->
+    <string name="refresh_title">Screen refresh</string>
+    <string name="tile_refresh_rate">Screen refresh rate</string>
+    <string name="auto_refresh_rate_summary">Let apps decide what refresh rate to use</string>
+    <string name="auto_refresh_rate_title">Auto refresh mode</string>
+    <string name="refresh_rate_summary">Choose between 60Hz or 120Hz peak refresh</string>
+    <string name="refresh_rate_title">Force 120Hz peak refresh rate</string>
+    <string name="refresh_rate_warning">Using forced 120Hz will impact battery life significantly</string>
 </resources>
