@@ -43,6 +43,10 @@
     <string name="proximity_sensor_title">मौजूदगी पता लगाने वाला सेंसर</string>
     <string name="pocket_gesture_title">जेब</string>
     <string name="pocket_gesture_summary">जेब से निकालने पर पल्स नोटिफिकेशन</string>
+    <!-- FPS info -->
+    <string name="fps_title">मापा एफपीएस</string>
+    <string name="fps_info_title">एफपीएस ओवरले</string>
+    <string name="fps_info_summary">वर्तमान फ्रेम प्रति सेकंड के साथ ओवरले दिखाएं</string>
     <!-- TouchScreen gestures -->
     <string name="screen_gestures_panel_title">इशारों</string>
     <string name="touchscreen_gesture_settings_title">टचस्क्रीन इशारे</string>

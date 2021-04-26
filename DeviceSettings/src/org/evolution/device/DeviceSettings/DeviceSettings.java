@@ -54,9 +54,11 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_AUTO_HBM_SWITCH = "auto_hbm";
     public static final String KEY_AUTO_HBM_THRESHOLD = "auto_hbm_threshold";
     public static final String KEY_DC_SWITCH = "dc";
+    public static final String KEY_FPS_INFO = "fps_info";
 
     private static TwoStatePreference mAutoHBMSwitch;
     private static TwoStatePreference mDCModeSwitch;
+    private static SwitchPreference mFpsInfo;
     private ListPreference mTopKeyPref;
     private ListPreference mMiddleKeyPref;
     private ListPreference mBottomKeyPref;
@@ -95,11 +97,23 @@ public class DeviceSettings extends PreferenceFragment
         mDCModeSwitch.setEnabled(DCModeSwitch.isSupported());
         mDCModeSwitch.setChecked(DCModeSwitch.isCurrentlyEnabled(this.getContext()));
         mDCModeSwitch.setOnPreferenceChangeListener(new DCModeSwitch());
+
+        mFpsInfo = (SwitchPreference) findPreference(KEY_FPS_INFO);
+        mFpsInfo.setChecked(prefs.getBoolean(KEY_FPS_INFO, false));
+        mFpsInfo.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mAutoHBMSwitch) {
+        if (preference == mFpsInfo) {
+            boolean enabled = (Boolean) newValue;
+            Intent fpsinfo = new Intent(this.getContext(), org.evolution.device.DeviceSettings.FPSInfoService.class);
+            if (enabled) {
+                this.getContext().startService(fpsinfo);
+            } else {
+                this.getContext().stopService(fpsinfo);
+            }
+        } else if (preference == mAutoHBMSwitch) {
             Boolean enabled = (Boolean) newValue;
             SharedPreferences.Editor prefChange = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
             prefChange.putBoolean(KEY_AUTO_HBM_SWITCH, enabled).commit();

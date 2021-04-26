@@ -43,6 +43,10 @@
     <string name="proximity_sensor_title">Proximity sensor</string>
     <string name="pocket_gesture_title">Pocket</string>
     <string name="pocket_gesture_summary">Pulse notifications on removal from pocket</string>
+    <!-- FPS info -->
+    <string name="fps_title">Measured FPS</string>
+    <string name="fps_info_title">FPS overlay</string>
+    <string name="fps_info_summary">Show overlay with with current frames per second</string>
     <!-- TouchScreen gestures -->
     <string name="screen_gestures_panel_title">Gestures</string>
     <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
