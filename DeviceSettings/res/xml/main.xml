@@ -27,7 +27,7 @@
             android:summary="@string/auto_hbm_summary"
             android:title="@string/auto_hbm_title" />
 
-        <org.evolution.device.DeviceSettings.preferences.AutoHBMThresholdPreference
+        <com.kangos.device.DeviceSettings.preferences.AutoHBMThresholdPreference
             android:key="auto_hbm_threshold"
             android:title="@string/auto_hbm_threshold_title"
             android:summary="@string/auto_hbm_threshold_summary" />
@@ -45,8 +45,8 @@
             android:summary="@string/ambient_display_gestures_summary">
             <intent
                     android:action="android.intent.action.MAIN"
-                    android:targetPackage="org.evolution.settings.doze" 
-                    android:targetClass="org.evolution.settings.doze.DozeSettingsActivity"/>
+                    android:targetPackage="com.kangos.settings.doze" 
+                    android:targetClass="com.kangos.settings.doze.DozeSettingsActivity"/>
         </Preference>
     </PreferenceCategory>
 

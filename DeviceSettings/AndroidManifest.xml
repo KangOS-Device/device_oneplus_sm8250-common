@@ -15,7 +15,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           android:sharedUserId="android.uid.system"
-          package="org.evolution.device.DeviceSettings"
+          package="com.kangos.device.DeviceSettings"
           android:versionCode="1"
           android:versionName="1.0" >
 
@@ -57,7 +57,7 @@
 
         <!-- DeviceSettings Tile -->
         <service
-            android:name="org.evolution.device.DeviceSettings.DeviceSettingsTileService"
+            android:name="com.kangos.device.DeviceSettings.DeviceSettingsTileService"
             android:icon="@drawable/ic_settings_device"
             android:label="@string/device_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -69,7 +69,7 @@
 
         <!-- Log Tile -->
         <service
-            android:name="org.evolution.device.DeviceSettings.LogTile"
+            android:name="com.kangos.device.DeviceSettings.LogTile"
             android:icon="@drawable/ic_qs_log"
             android:label="@string/quick_settings_log_tile_label"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -80,11 +80,11 @@
         </service>
 
         <!-- Auto HBM Service -->
-        <service android:name="org.evolution.device.DeviceSettings.AutoHBMService" />
+        <service android:name="com.kangos.device.DeviceSettings.AutoHBMService" />
 
         <!-- DC-Dimming Tile -->
         <service
-            android:name="org.evolution.device.DeviceSettings.DCModeTileService"
+            android:name="com.kangos.device.DeviceSettings.DCModeTileService"
             android:icon="@drawable/ic_dc_tile"
             android:label="@string/tile_dc_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -107,14 +107,14 @@
         </service>
 
         <!-- FPS Info Service -->
-        <service android:name="org.evolution.device.DeviceSettings.FPSInfoService"
+        <service android:name="com.kangos.device.DeviceSettings.FPSInfoService"
                 android:exported="false">
         </service>
 
         <!-- Search Provider -->
         <provider
             android:name=".ConfigPanelSearchIndexablesProvider"
-            android:authorities="org.evolution.device"
+            android:authorities="com.kangos.device"
             android:multiprocess="false"
             android:grantUriPermissions="true"
             android:permission="android.permission.READ_SEARCH_INDEXABLES"

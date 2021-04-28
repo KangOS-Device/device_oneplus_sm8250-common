@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-evolution
+    $(LOCAL_PATH)/overlay-kangos
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
-    vendor/evolution/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/kangos/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -305,6 +305,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(LOCAL_PATH)/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
+# HALS
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8250/media
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sm8250/display
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8250/audio
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
@@ -333,6 +338,10 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     libipanat \
     liboffloadhal
+
+# KangOS specific properties
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.kangos.cpu=SDM865
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -398,6 +407,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     oneplus-fwk.oneplus_kona
 
+# Platform
+PRODUCT_BOARD_PLATFORM := kona
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -443,13 +456,11 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    device/oneplus/common
-
-# Sounds
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=Ganymede.ogg \
-    ro.config.notification_sound=Carme.ogg \
-    ro.config.alarm_alert=Argon.ogg
+    device/oneplus/common \
+    hardware/qcom-caf/sm8250 \
+    hardware/qcom-caf/sm8250/audio \
+    hardware/qcom-caf/sm8250/media \
+    hardware/qcom-caf/sm8250/display
 
 # Telephony
 PRODUCT_PACKAGES += \
