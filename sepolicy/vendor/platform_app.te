@@ -2,4 +2,5 @@ allow platform_app hal_ifaa_hwservice:hwservice_manager find;
 allow platform_app default_android_service:service_manager find;
 allow platform_app boottime_prop:file { getattr open read map };
 allow platform_app exported_audio_prop:file { getattr open read map };
+allow platform_app ota_package_file:dir { getattr open read map };
 binder_call(platform_app, hal_ifaa_default)

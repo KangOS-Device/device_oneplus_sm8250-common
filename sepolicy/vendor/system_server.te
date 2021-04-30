@@ -3,3 +3,5 @@ allow system_server vendor_sysfs_battery_supply:file { getattr open read };
 
 # Allow system_server to read notch display
 allow system_server vendor_display_notch_prop:file { getattr open read map };
+
+allow system_server vendor_default_prop:file { getattr open read map };
