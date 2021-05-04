@@ -16,25 +16,12 @@
     <!-- Display modes -->
     <string name="display_title">Modalità display</string>
     <string name="display_summary">Regola impostazioni e preferenze per il display</string>
-    <string name="srgb_mode_summary"></string>
-    <string name="srgb_mode_title">Modalità sRGB</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">Modalità alta luminosità</string>
     <string name="auto_hbm_summary"></string>
     <string name="auto_hbm_title">Modalità alta luminosità automatica</string>
     <string name="auto_hbm_threshold_title">Soglia automatica modalità alta luminosità (lux)</string>
     <string name="auto_hbm_threshold_summary"></string>
     <string name="dc_mode_summary"></string>
     <string name="dc_mode_title">DC-Dimming</string>
-    <string name="dci_mode_summary"></string>
-    <string name="dci_mode_title">Gamma colori DCI-P3</string>
-    <string name="wide_mode_summary"></string>
-    <string name="wide_mode_title">Modalità colore ampio</string>
-    <string name="panel_category_title">Modalità pannello</string>
-    <string name="panel_category_summary">Modalità di correzione del colore pannello</string>
-    <string name="off_mode_title">Disattivato</string>
-    <string name="tile_panel_mode">Modalità pannello</string>
-    <string name="tile_hbm_mode">Modalità alta luminosità</string>
     <string name="tile_dc_mode">DC-Dimming</string>
     <!-- Doze -->
     <string name="doze_panel_title">Doze</string>
@@ -73,12 +60,4 @@
     <string name="notification_slider_mode_vibrate">Vibrazione</string>
     <string name="notification_slider_mode_none">Normale</string>
     <string name="buttons_dashboard_summary">Impostazioni cursore notifiche</string>
-    <!-- Vibration control -->
-    <string name="vibrator_title">Vibrazione</string>
-    <string name="vib_strength_title_head">Intensità di sistema</string>
-    <string name="vib_strength_summary_head">Definisci la forza della vibrazione</string>
-    <string name="vib_call_strength_title_head">Intensità su chiamata</string>
-    <string name="vib_call_strength_summary_head">Definisci l\'intensità della vibrazione durante una chiamata in arrivo</string>
-    <string name="vib_notif_strength_title_head">Intensità su notifica</string>
-    <string name="vib_notif_strength_summary_head">Definire l\'intensità della vibrazioe durante una notifica in arrivo</string>
 </resources>

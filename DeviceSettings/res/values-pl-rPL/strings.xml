@@ -16,25 +16,12 @@
     <!-- Display modes -->
     <string name="display_title">Tryby wyświetlania</string>
     <string name="display_summary">Dostosuj ustawienia i preferencje wyświetlania</string>
-    <string name="srgb_mode_summary"></string>
-    <string name="srgb_mode_title">Tryb sRGB</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">Tryb wysokiej jasności</string>
     <string name="auto_hbm_summary"></string>
     <string name="auto_hbm_title">Automatyczny tryb wysokiej jasności</string>
     <string name="auto_hbm_threshold_title">Próg automatycznego trybu wysokiej jasności (lux)</string>
     <string name="auto_hbm_threshold_summary"></string>
     <string name="dc_mode_summary"></string>
     <string name="dc_mode_title">DC-Dimming</string>
-    <string name="dci_mode_summary"></string>
-    <string name="dci_mode_title">Tryb DCI-P3</string>
-    <string name="wide_mode_summary"></string>
-    <string name="wide_mode_title">Tryb szerokiej gamy kolorów</string>
-    <string name="panel_category_title">Tryby panelu</string>
-    <string name="panel_category_summary">Tryby korekcji kolorów panelu</string>
-    <string name="off_mode_title">Wyłączone</string>
-    <string name="tile_panel_mode">Tryby panelu</string>
-    <string name="tile_hbm_mode">Tryb wysokiej jasności</string>
     <string name="tile_dc_mode">DC-Dimming</string>
     <!-- Doze -->
     <string name="doze_panel_title">Drzemka</string>
@@ -73,12 +60,4 @@
     <string name="notification_slider_mode_vibrate">Wibracje</string>
     <string name="notification_slider_mode_none">Normalny</string>
     <string name="buttons_dashboard_summary">Ustawienia suwaka powiadomień</string>
-    <!-- Vibration control -->
-    <string name="vibrator_title">Wibracje</string>
-    <string name="vib_strength_title_head">Siła systemu</string>
-    <string name="vib_strength_summary_head">Określ siłę wibracji</string>
-    <string name="vib_call_strength_title_head">Siła połączenia</string>
-    <string name="vib_call_strength_summary_head">Zdefiniuj siłę wibracji podczas połączenia przychodzącego</string>
-    <string name="vib_notif_strength_title_head">Siła powiadomień</string>
-    <string name="vib_notif_strength_summary_head">Zdefiniuj siłę wibracji podczas przychodzącego powiadomienia</string>
 </resources>
