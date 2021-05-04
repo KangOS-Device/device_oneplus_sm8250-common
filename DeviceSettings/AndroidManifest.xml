@@ -32,7 +32,7 @@
         android:label="@string/device_title"
         android:theme="@style/AppTheme">
 
-        <!-- Device Settings -->
+        <!-- DeviceSettings Activity -->
         <activity
             android:name=".DeviceSettingsActivity"
             android:label="@string/device_title">
@@ -52,23 +52,6 @@
         <activity android:name=".DeviceSettings" />
         <activity android:name=".KeyHandler" />
 
-        <activity
-            android:name="org.evolution.device.DeviceSettings.PanelSettingsActivity"
-            android:exported="true"
-            android:label="@string/panel_category_title"
-            android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <receiver android:name="org.evolution.device.DeviceSettings.Startup" >
-            <intent-filter android:priority="100" >
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
         <!-- DeviceSettings Tile -->
         <service
             android:name="org.evolution.device.DeviceSettings.DeviceSettingsTileService"
@@ -81,34 +64,10 @@
             </intent-filter>
         </service>
 
-        <!-- Panel Mode's tile -->
-        <service
-            android:name="org.evolution.device.DeviceSettings.PanelModeTileService"
-            android:icon="@drawable/ic_panel_tile"
-            android:label="@string/tile_panel_mode"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
-        <!-- HBM tile -->
-        <service
-            android:name="org.evolution.device.DeviceSettings.HBMModeTileService"
-            android:icon="@drawable/ic_hbm_tile"
-            android:label="@string/tile_hbm_mode"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
-        <!-- Auto HBM service -->
+        <!-- Auto HBM Service -->
         <service android:name="org.evolution.device.DeviceSettings.AutoHBMService" />
 
-        <!-- DC-Dimming tile -->
+        <!-- DC-Dimming Tile -->
         <service
             android:name="org.evolution.device.DeviceSettings.DCModeTileService"
             android:icon="@drawable/ic_dc_tile"
@@ -120,7 +79,7 @@
             </intent-filter>
         </service>
 
-        <!-- FPS overlay tile -->
+        <!-- FPS Overlay Tile -->
         <service
             android:name=".FPSTileService"
             android:icon="@drawable/ic_fps"
@@ -132,7 +91,7 @@
             </intent-filter>
         </service>
 
-        <!-- FPS info service -->
+        <!-- FPS Info Service -->
         <service android:name="org.evolution.device.DeviceSettings.FPSInfoService"
                 android:exported="false">
         </service>
