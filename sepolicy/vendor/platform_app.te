@@ -1,4 +1,5 @@
 allow platform_app hal_ifaa_hwservice:hwservice_manager find;
 allow platform_app default_android_service:service_manager find;
+allow platform_app ota_package_file:dir { getattr open read map };
 get_prop(platform_app, boottime_prop)
 binder_call(platform_app, hal_ifaa_default)
